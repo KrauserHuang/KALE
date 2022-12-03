@@ -17,6 +17,12 @@
 		4F0173F72939AD13008F9258 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0173F62939AD13008F9258 /* Constants.swift */; };
 		4F0173F92939AD8A008F9258 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0173F82939AD8A008F9258 /* UIImage+Extension.swift */; };
 		4F0173FC2939CAF8008F9258 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0173FB2939CAF8008F9258 /* User.swift */; };
+		4F08432F293B3A4800451478 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F08432E293B3A4800451478 /* Store.swift */; };
+		4F084332293B3F2F00451478 /* MapStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084331293B3F2F00451478 /* MapStoreCell.swift */; };
+		4F084335293B408D00451478 /* KLTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084334293B408D00451478 /* KLTitleLabel.swift */; };
+		4F084337293B420800451478 /* KLSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084336293B420800451478 /* KLSecondaryTitleLabel.swift */; };
+		4F084339293B447700451478 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084338293B447700451478 /* UIView+Extension.swift */; };
+		4F08433B293B489F00451478 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F08433A293B489F00451478 /* UICollectionView+Extension.swift */; };
 		4F43AEEB29387FBB00449AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43AEEA29387FBB00449AD7 /* AppDelegate.swift */; };
 		4F43AEED29387FBB00449AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43AEEC29387FBB00449AD7 /* SceneDelegate.swift */; };
 		4F43AEEF29387FBB00449AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43AEEE29387FBB00449AD7 /* ViewController.swift */; };
@@ -36,6 +42,12 @@
 		4F0173F62939AD13008F9258 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4F0173F82939AD8A008F9258 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		4F0173FB2939CAF8008F9258 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F08432E293B3A4800451478 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4F084331293B3F2F00451478 /* MapStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStoreCell.swift; sourceTree = "<group>"; };
+		4F084334293B408D00451478 /* KLTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTitleLabel.swift; sourceTree = "<group>"; };
+		4F084336293B420800451478 /* KLSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		4F084338293B447700451478 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4F08433A293B489F00451478 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		4F43AEE729387FBB00449AD7 /* KALE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KALE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F43AEEA29387FBB00449AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F43AEEC29387FBB00449AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +72,7 @@
 		4F0173DF293991B5008F9258 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F084333293B406B00451478 /* Labels */,
 				4F0173E0293991C6008F9258 /* TabBarControllers */,
 			);
 			path = "Custom Views";
@@ -76,10 +89,10 @@
 		4F0173E3293992D7008F9258 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4F0173E429399372008F9258 /* Map */,
 				4F0173ED293997F4008F9258 /* Community */,
 				4F0173EA29399730008F9258 /* Post */,
 				4F0173E729399417008F9258 /* Profile */,
-				4F0173E429399372008F9258 /* Map */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -87,6 +100,7 @@
 		4F0173E429399372008F9258 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4F084330293B3E8000451478 /* Cells */,
 				4F0173E529399385008F9258 /* MapVC.swift */,
 			);
 			path = Map;
@@ -122,6 +136,8 @@
 				4F0173F12939A252008F9258 /* UIColor+Extension.swift */,
 				4F0173F32939AABE008F9258 /* UINavigationController+Extension.swift */,
 				4F0173F82939AD8A008F9258 /* UIImage+Extension.swift */,
+				4F084338293B447700451478 /* UIView+Extension.swift */,
+				4F08433A293B489F00451478 /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,8 +154,26 @@
 			isa = PBXGroup;
 			children = (
 				4F0173FB2939CAF8008F9258 /* User.swift */,
+				4F08432E293B3A4800451478 /* Store.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4F084330293B3E8000451478 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F084331293B3F2F00451478 /* MapStoreCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4F084333293B406B00451478 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				4F084334293B408D00451478 /* KLTitleLabel.swift */,
+				4F084336293B420800451478 /* KLSecondaryTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		4F43AEDE29387FBA00449AD7 = {
@@ -164,8 +198,8 @@
 				4F0173FA2939CAE2008F9258 /* Model */,
 				4F0173F52939ACFD008F9258 /* Utilities */,
 				4F0173F02939A231008F9258 /* Extensions */,
-				4F0173E3293992D7008F9258 /* Screens */,
 				4F0173DF293991B5008F9258 /* Custom Views */,
+				4F0173E3293992D7008F9258 /* Screens */,
 				4F43AEEA29387FBB00449AD7 /* AppDelegate.swift */,
 				4F43AEEC29387FBB00449AD7 /* SceneDelegate.swift */,
 				4F43AEEE29387FBB00449AD7 /* ViewController.swift */,
@@ -247,17 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F08432F293B3A4800451478 /* Store.swift in Sources */,
+				4F084337293B420800451478 /* KLSecondaryTitleLabel.swift in Sources */,
 				4F0173F92939AD8A008F9258 /* UIImage+Extension.swift in Sources */,
 				4F0173EF2939980C008F9258 /* CommunityVC.swift in Sources */,
 				4F43AEEF29387FBB00449AD7 /* ViewController.swift in Sources */,
+				4F084335293B408D00451478 /* KLTitleLabel.swift in Sources */,
 				4F0173F42939AABE008F9258 /* UINavigationController+Extension.swift in Sources */,
 				4F0173E629399385008F9258 /* MapVC.swift in Sources */,
 				4F0173E929399428008F9258 /* ProfileVC.swift in Sources */,
 				4F0173FC2939CAF8008F9258 /* User.swift in Sources */,
+				4F084332293B3F2F00451478 /* MapStoreCell.swift in Sources */,
 				4F43AEEB29387FBB00449AD7 /* AppDelegate.swift in Sources */,
+				4F084339293B447700451478 /* UIView+Extension.swift in Sources */,
 				4F43AEF529387FBB00449AD7 /* KALE.xcdatamodeld in Sources */,
 				4F43AEED29387FBB00449AD7 /* SceneDelegate.swift in Sources */,
 				4F0173EC29399743008F9258 /* PostVC.swift in Sources */,
+				4F08433B293B489F00451478 /* UICollectionView+Extension.swift in Sources */,
 				4F0173E2293991F7008F9258 /* KLTabBarController.swift in Sources */,
 				4F0173F22939A252008F9258 /* UIColor+Extension.swift in Sources */,
 				4F0173F72939AD13008F9258 /* Constants.swift in Sources */,

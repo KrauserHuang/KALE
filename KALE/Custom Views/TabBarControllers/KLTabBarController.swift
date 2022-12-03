@@ -8,7 +8,6 @@
 import UIKit
 
 class KLTabBarController: UITabBarController {
-    
     private let tabs: [tab] = [.map, .community, .post, .profile]
 
     override func viewDidLoad() {
@@ -18,7 +17,7 @@ class KLTabBarController: UITabBarController {
 //        delegate = self
         tabBar.tintColor = .white
 //        viewControllers = [createMapVC(), createCommunityVC(), createPostVC(), createProfileVC()]
-        viewControllers = tabs.map { $0.setController(user: nil)}
+        viewControllers = tabs.map { $0.setController(user: nil) }
     }
     
     private func configureTabBar() {
@@ -30,12 +29,11 @@ class KLTabBarController: UITabBarController {
         
         tabBarAppearance.backgroundColor = .klCurry4
 //        tabBarAppearance.stackedLayoutAppearance.normal.badgeBackgroundColor = .systemBrown
-
 //        tabBarAppearance.stackedLayoutAppearance.normal.iconColor = .black
 
 //        let attributes = [
-//            NSAttributedString.Key.foregroundColor: UIColor.black,
-//            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .medium)
+//            NSAttributedString.Key.foregroundColor: UIColor.systemBackground,
+//            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 8, weight: .medium)
 //        ]
 //        tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = attributes
 //        tabBarAppearance.stackedLayoutAppearance.selected.titleTextAttributes = attributes
@@ -51,7 +49,7 @@ class KLTabBarController: UITabBarController {
 //        let mapNC = UINavigationController(rootViewController: mapVC)
 //        return mapNC
 //    }
-//    
+//
 //    private func createCommunityVC() -> UINavigationController {
 //        let communityVC = CommunityVC()
 //        communityVC.title = "Community"
@@ -59,7 +57,7 @@ class KLTabBarController: UITabBarController {
 //        let communityNC = UINavigationController(rootViewController: communityVC)
 //        return communityNC
 //    }
-//    
+//
 //    private func createPostVC() -> UINavigationController {
 //        let postVC = PostVC()
 //        postVC.title = "Post"
@@ -67,7 +65,7 @@ class KLTabBarController: UITabBarController {
 //        let postNC = UINavigationController(rootViewController: postVC)
 //        return postNC
 //    }
-//    
+//
 //    private func createProfileVC() -> UINavigationController {
 //        let profileVC = ProfileVC()
 //        profileVC.title = "Profile"
@@ -87,10 +85,10 @@ private enum tab: Int {
         var controller: UIViewController
 
         switch self {
-        case .map:          controller = UINavigationController(rootViewController: MapVC())
-        case .community:    controller = UINavigationController(rootViewController: CommunityVC())
-        case .post:         controller = UINavigationController(rootViewController: PostVC())
-        case .profile:      controller = UINavigationController(rootViewController: ProfileVC())
+        case .map: controller = UINavigationController(rootViewController: MapVC())
+        case .community: controller = UINavigationController(rootViewController: CommunityVC())
+        case .post: controller = UINavigationController(rootViewController: PostVC())
+        case .profile: controller = UINavigationController(rootViewController: ProfileVC())
         }
         controller.tabBarItem = tabBarItem
         controller.tabBarItem.imageInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
@@ -99,10 +97,10 @@ private enum tab: Int {
     
     private var tabBarItem: UITabBarItem {
         switch self {
-        case .map:          return UITabBarItem(title: "Map", image: SFSymbols.map, selectedImage: SFSymbols.mapSelected)
-        case .community:    return UITabBarItem(title: "Community", image: SFSymbols.community, selectedImage: SFSymbols.community)
-        case .post:         return UITabBarItem(title: "Post", image: SFSymbols.post, selectedImage: SFSymbols.postSelected)
-        case .profile:      return UITabBarItem(title: "Profile", image: SFSymbols.profile, selectedImage: SFSymbols.profileSelected)
+        case .map: return UITabBarItem(title: "Map", image: SFSymbols.map, selectedImage: SFSymbols.mapSelected)
+        case .community: return UITabBarItem(title: "Community", image: SFSymbols.community, selectedImage: SFSymbols.community)
+        case .post: return UITabBarItem(title: "Post", image: SFSymbols.post, selectedImage: SFSymbols.postSelected)
+        case .profile: return UITabBarItem(title: "Profile", image: SFSymbols.profile, selectedImage: SFSymbols.profileSelected)
         }
     }
 }
