@@ -20,4 +20,6 @@ enum SFSymbols {
     static let profile          = UIImage(systemName: "person")
     static let profileSelected  = UIImage(systemName: "person.fill")
     static let arrow            = UIImage(systemName: "arrow.backward")
+    static let bookmark         = UIImage(systemName: "bookmark")
+    static let bookmarkSelected = UIImage(systemName: "bookmark.fill")
 }

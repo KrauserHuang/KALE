@@ -29,6 +29,9 @@
 		4F43AEF529387FBB00449AD7 /* KALE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F43AEF329387FBB00449AD7 /* KALE.xcdatamodeld */; };
 		4F43AEF729387FC000449AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F43AEF629387FC000449AD7 /* Assets.xcassets */; };
 		4F43AEFA29387FC000449AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F43AEF829387FC000449AD7 /* LaunchScreen.storyboard */; };
+		4F6E339E293C9F630063A8AC /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6E339D293C9F630063A8AC /* Base.swift */; };
+		4FBA34CB293EDBC600E6B94F /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA34CA293EDBC600E6B94F /* MKMapView+Extension.swift */; };
+		4FBA34CE293EE6DB00E6B94F /* KLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA34CD293EE6DB00E6B94F /* KLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		4F43AEF629387FC000449AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F43AEF929387FC000449AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F43AEFB29387FC000449AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F6E339D293C9F630063A8AC /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		4FBA34CA293EDBC600E6B94F /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MKMapView+Extension.swift"; path = "../../../../../Downloads/MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		4FBA34CD293EE6DB00E6B94F /* KLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		4F0173DF293991B5008F9258 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FBA34CC293EE60000E6B94F /* Buttons */,
 				4F084333293B406B00451478 /* Labels */,
 				4F0173E0293991C6008F9258 /* TabBarControllers */,
 			);
@@ -138,6 +145,7 @@
 				4F0173F82939AD8A008F9258 /* UIImage+Extension.swift */,
 				4F084338293B447700451478 /* UIView+Extension.swift */,
 				4F08433A293B489F00451478 /* UICollectionView+Extension.swift */,
+				4FBA34CA293EDBC600E6B94F /* MKMapView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			children = (
 				4F0173FB2939CAF8008F9258 /* User.swift */,
 				4F08432E293B3A4800451478 /* Store.swift */,
+				4F6E339D293C9F630063A8AC /* Base.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +218,14 @@
 				4F43AEF329387FBB00449AD7 /* KALE.xcdatamodeld */,
 			);
 			path = KALE;
+			sourceTree = "<group>";
+		};
+		4FBA34CC293EE60000E6B94F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4FBA34CD293EE6DB00E6B94F /* KLButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 				4F0173E629399385008F9258 /* MapVC.swift in Sources */,
 				4F0173E929399428008F9258 /* ProfileVC.swift in Sources */,
 				4F0173FC2939CAF8008F9258 /* User.swift in Sources */,
+				4F6E339E293C9F630063A8AC /* Base.swift in Sources */,
 				4F084332293B3F2F00451478 /* MapStoreCell.swift in Sources */,
 				4F43AEEB29387FBB00449AD7 /* AppDelegate.swift in Sources */,
 				4F084339293B447700451478 /* UIView+Extension.swift in Sources */,
@@ -299,8 +317,10 @@
 				4F0173EC29399743008F9258 /* PostVC.swift in Sources */,
 				4F08433B293B489F00451478 /* UICollectionView+Extension.swift in Sources */,
 				4F0173E2293991F7008F9258 /* KLTabBarController.swift in Sources */,
+				4FBA34CB293EDBC600E6B94F /* MKMapView+Extension.swift in Sources */,
 				4F0173F22939A252008F9258 /* UIColor+Extension.swift in Sources */,
 				4F0173F72939AD13008F9258 /* Constants.swift in Sources */,
+				4FBA34CE293EE6DB00E6B94F /* KLButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
